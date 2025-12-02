@@ -1,90 +1,24 @@
 {
-  "users": {
-    "alice": {
-      "roles": ["admin"],
-      "location": {
-        "country": "US",
-        "ip": "8.8.8.8"
-      }
-    },
-    "bob": {
-      "roles": ["employee", "billing"],
-      "location": {
-        "country": "US",
-        "ip": "8.8.8.8"
-      }
-    },
-     "sunil": {
-      "roles": ["guest"],
-      "location": {
-        "country": "US",
-        "ip": "8.8.8.8"
-      }
-    },
-    "eve": {
-      "roles": ["customer"],
-      "location": {
-        "country": "US",
-        "ip": "8.8.8.8"
+  "perspective_rules": {
+    "ORG_TRANSPORT_001": {
+      "Driver_Trainer": {
+        "allowed_perspectives": [
+          "11111001-1111-0000-1111-111111110A91",
+          "11112002-2222-0000-1111-111111110A91",
+          "12343502-2561-0330-1111-111111110A91"
+        ]
+      },
+      "Regional_Manager_NA": {
+        "allowed_perspectives": [
+          "13332002-NA-1111-0000-1111-111111110A91",
+          "DIVISION-FREIGHT-3333-0000-1111-111111110A91"
+        ]
+      },
+      "Maintenance_Staff": {
+        "allowed_perspectives": [
+          "12324561-MAINTENANCE-5555-0000-1111-111111110A91"
+        ]
       }
     }
-  },
-  "role_permissions": {
-    "customer": [
-      {
-        "action": "read",
-        "type": "dog"
-      },
-      {
-        "action": "read",
-        "type": "cat"
-      },
-      {
-        "action": "adopt",
-        "type": "dog"
-      },
-      {
-        "action": "adopt",
-        "type": "cat"
-      }
-    ],
-    "employee": [
-      {
-        "action": "read",
-        "type": "dog"
-      },
-      {
-        "action": "read",
-        "type": "cat"
-      },
-      {
-        "action": "update",
-        "type": "dog"
-      },
-      {
-        "action": "update",
-        "type": "cat"
-      }
-    ],
-    "billing": [
-      {
-        "action": "read",
-        "type": "finance"
-      },
-      {
-        "action": "update",
-        "type": "finance"
-      }
-    ],
-    "guest": [
-     {
-       "action": "read",
-       "type": "cat"
-     },
-     {
-       "action": "read",
-       "type": "finance"
-     }
-    ]
   }
 }
