@@ -26,7 +26,8 @@ allow if {
     role := org.Roles[role_index].Id
     perspective := input.entity_perspective
 
-    trace(sprintf("Checking org: %v role: %v perspective: %v", [org.OrganisationId, role, perspective]))
+    print(org)
+    print(role)
 
     perspective_allowed(org.OrganisationId, role, perspective)
 }
