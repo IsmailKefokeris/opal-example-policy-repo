@@ -1,7 +1,7 @@
 {
   "perspective_rules": {
-    "ORG_TRANSPORT_001": {
-      "Driver_Trainer": {
+    "ORG_001": {
+      "ROLE-DRIVER-TRAINER": {
         "allowed_perspectives": [
           "11111001-1111-0000-1111-111111110A91",
           "11112002-2222-0000-1111-111111110A91",
@@ -17,6 +17,52 @@
       "Maintenance_Staff": {
         "allowed_perspectives": [
           "12324561-MAINTENANCE-5555-0000-1111-111111110A91"
+        ]
+      }
+    },
+    "ORG_002": {
+      "Warehouse_Supervisor": {
+        "allowed_perspectives": [
+          "WAREHOUSE-OPS-1111-0000-1111-111111110A91",
+          "INVENTORY-TRACK-2222-0000-1111-111111110A91"
+        ]
+      },
+      "Fleet_Manager": {
+        "allowed_perspectives": [
+          "FLEET-OVERVIEW-3333-0000-1111-111111110A91",
+          "MAINTENANCE-SCHEDULE-4444-0000-1111-111111110A91"
+        ]
+      }
+    },
+    "ORG_003": {
+      "ROLE-DEVELOPER": {
+        "allowed_perspectives": [
+          "STORE-SALES-5555-0000-1111-111111110A91",
+          "CUSTOMER-INSIGHTS-6666-0000-1111-111111110A91"
+        ]
+      },
+      "Regional_Director": {
+        "allowed_perspectives": [
+          "REGIONAL-REPORTS-7777-0000-1111-111111110A91",
+          "STRATEGY-DASHBOARD-8888-0000-1111-111111110A91"
+        ]
+      }
+    },
+    "ORG_004": {
+      "Maintenance_Staff": {
+        "allowed_perspectives": [
+          "PATIENT-RECORDS-9999-0000-1111-111111110A91",
+          "DIAGNOSTICS-1010-0000-1111-111111110A91"
+        ]
+      },
+      "ROLE-DRIVER": {
+        "allowed_perspectives": [
+          "WARD-MANAGEMENT-1112-0000-1111-111111110A91"
+        ]
+      },
+      "Finance": {
+        "allowed_perspectives": [
+          "BILLING-REPORTS-1212-0000-1111-111111110A91"
         ]
       }
     }
