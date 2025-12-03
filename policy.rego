@@ -19,12 +19,11 @@ default allow := false
 
 # Allow the action if any of the user's org/role pairs permits the requested perspective.
 allow if {
-	trace("STarting ALLOW")
     some org_index, role_index
 
-    org := input.user.Organisations[org_index]
+    org := input.input.user.Organisations[org_index]
     role := org.Roles[role_index].Id
-    perspective := input.entity_perspective
+    perspective := input.input.entity_perspective
 
     print(org)
     print(role)
@@ -36,5 +35,4 @@ allow if {
 perspective_allowed(org_id, role, perspective) if {
     allowed := data.perspective_rules[org_id][role].allowed_perspectives
     perspective == allowed[_]
-	trace(sprintf("Allowed???: %v", [perspective == allowed[_]]))
 }
