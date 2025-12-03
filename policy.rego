@@ -22,7 +22,7 @@ allow {
 	some org_index, role_index
 
     org := input.user.Organisations[org_index]
-    role := org.Roles[role_index].Id
+    role := org[org_index].Roles[role_index].Id
     perspective := input.entity_perspective
 
     perspective_allowed(org.OrganisationId, role, perspective)
