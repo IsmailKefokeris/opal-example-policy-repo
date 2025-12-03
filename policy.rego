@@ -22,7 +22,7 @@ allow {
 	some org_index, role_index
 
     org := input.user.Organisations[org_index]
-    role := org[org_index].Roles[role_index].Id
+    role := org.Roles[role_index].Id
     perspective := input.entity_perspective
 
     perspective_allowed(org.OrganisationId, role, perspective)
@@ -31,8 +31,9 @@ allow {
 
 
 perspective_allowed(roles, perspective) {
+	some idx
 # Gets all Perspectives that this current org, with roles can see.
 	allowed := data.perspective_rules[org_id][role].allowed_perspectives
 # Iterate through each and check whether that is the perspective that was requested.
-	perspective == allowed[_]
+	perspective == allowed[idx]
 }
