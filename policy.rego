@@ -21,9 +21,9 @@ default allow := false
 allow if {
     some org_index, role_index
 
-    org := input.input.user.Organisations[org_index]
+    org := input.user.Organisations[org_index]
     role := org.Roles[role_index].Id
-    perspective := input.input.entity_perspective
+    perspective := input.entity_perspective
 
     print(org)
     print(role)
