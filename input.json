@@ -1,0 +1,16 @@
+{
+    "user": {
+        "Organisations": [
+            {
+                "OrganisationId": "ORG_001",
+                "Roles": [
+                    {
+                        "Id": "ROLE-DRIVER-TRAINER",
+                        "Name": "Driver Trainer"
+                    }
+                ]
+            }
+        ]
+    },
+    "entity_perspective": "11111001-1111-0000-1111-111111110A91"
+}
