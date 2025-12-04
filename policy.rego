@@ -25,9 +25,6 @@ allow if {
     role := org.Roles[role_index].Id
     perspective := input.entity_perspective
 
-    print(org)
-    print(role)
-
     perspective_allowed(org.OrganisationId, role, perspective)
 }
 
