@@ -14,8 +14,9 @@
 
 
 package transport.access
+import future.keywords.if
 
-default allow := false
+default allow = false
 
 # Allow the action if any of the user's org/role pairs permits the requested perspective.
 allow if {
